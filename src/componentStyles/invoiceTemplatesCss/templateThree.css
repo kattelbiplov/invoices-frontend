@@ -1,0 +1,129 @@
+.invoice-template-three {
+  font-family: Arial, sans-serif;
+  color: #000;
+  padding-left: 40px;
+  padding-top: 40px;
+  padding-bottom: 100px;
+  padding-right: 40px;
+  max-width: 800px;
+  background-color: #fff;
+  font-size: 12px;
+}
+
+.invoice-header {
+  text-align: center;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+
+.company-info {
+  text-align: center;
+  font-size: 12px;
+}
+
+.company-info h1 {
+  font-size: 18px;
+  color: #dc143c;
+  font-weight: bold;
+  text-align: center;
+}
+
+.company-info p {
+  margin: 2px 0;
+}
+
+.invoice-meta-top {
+  text-align: right;
+  margin-bottom: 20px;
+}
+
+.date-info p {
+  margin: 2px 0;
+}
+
+.buyer-section {
+  margin-bottom: 20px;
+}
+
+.buyer-section h3 {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.buyer-section p {
+  margin: 2px 0;
+}
+
+.invoice-title {
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 20px 0;
+  text-decoration: underline;
+}
+
+.invoice-intro {
+  font-size: 12px;
+  margin-bottom: 20px;
+}
+
+.invoice-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.invoice-table th {
+  background-color: #00008b;
+  color: #fff;
+  padding: 8px;
+  text-align: center;
+  border-bottom: 1px solid #000;
+}
+
+.invoice-table td {
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+}
+
+.totals-section {
+  text-align: right;
+  margin-bottom: 20px;
+  font-size: 12px;
+}
+
+.totals-section p {
+  margin: 5px 0;
+}
+
+.grand-total {
+  font-weight: bold;
+  color: #dc143c;
+}
+
+.terms-section {
+  margin-bottom: 20px;
+}
+
+.terms-title {
+  font-size: 14px;
+  font-weight: bold;
+  margin: 10px 0 5px;
+}
+
+.terms-section p {
+  margin: 5px 0;
+}
+
+.invoice-footer {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.confirmed-by {
+  margin-top: 10px;
+  font-weight: bold;
+}

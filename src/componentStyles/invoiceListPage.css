@@ -1,0 +1,61 @@
+.invoice-list-container {
+    max-width: 1000px;
+    margin: 2rem auto;
+    background: #fff;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    font-family: "Segoe UI", sans-serif;
+  }
+  
+  .invoice-list-container h2 {
+    margin-bottom: 1rem;
+    color: #333;
+  }
+  
+  .invoice-list-container label {
+    font-weight: 600;
+    margin-bottom: 0.4rem;
+    display: block;
+  }
+  
+  .invoice-list-container select {
+    width: 100%;
+    padding: 0.6rem;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    margin-bottom: 1.5rem;
+  }
+  
+  .invoice-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+  }
+  
+  .invoice-table th,
+  .invoice-table td {
+    border: 1px solid #e0e0e0;
+    padding: 0.6rem;
+    text-align: left;
+  }
+  
+  .invoice-table th {
+    background: #f4f6f8;
+    font-weight: 600;
+  }
+  
+  .view-btn {
+    padding: 6px 10px;
+    background: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.2s;
+  }
+  
+  .view-btn:hover {
+    background: #2980b9;
+  }
+  

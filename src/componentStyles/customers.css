@@ -1,0 +1,142 @@
+.customers-page {
+    padding: 20px;
+  }
+  
+  .page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .btn-add {
+    padding: 10px 14px;
+    background: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  .customers-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .customers-table th, .customers-table td {
+    border: 1px solid #d1d5db;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  .customers-table th {
+    background: #f3f4f6;
+  }
+  
+  .btn-edit {
+    padding: 5px 10px;
+    margin-right: 5px;
+    background: #10b981;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  .btn-delete {
+    padding: 5px 10px;
+    background: #ef4444;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+  }
+  
+  .modal-content {
+    background: #ffffff;
+    padding: 30px 40px;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .modal-content label {
+    display: block;
+    margin-top: 15px;
+    font-weight: 500;
+  }
+  
+  .modal-content input {
+    width: 100%;
+    padding: 8px 10px;
+    margin-top: 5px;
+    border-radius: 6px;
+    border: 1px solid #d1d5db;
+  }
+  
+  .modal-actions {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+  }
+  
+  .modal-actions button {
+    padding: 8px 14px;
+    margin-left: 10px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .modal-actions button:first-child {
+    background: #d1d5db;
+    color: #111827;
+  }
+  
+  .modal-actions button:last-child {
+    background: #2563eb;
+    color: white;
+  }
+  
+
+  .toast {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 12px 20px;
+    border-radius: 8px;
+    color: white;
+    font-weight: 500;
+    z-index: 1000;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    opacity: 0.95;
+  }
+  
+  .toast.success {
+    background-color: #10b981; 
+  }
+  
+  .toast.error {
+    background-color: #ef4444; 
+  }
+  
+
+  .modal-actions button:last-child:hover {
+    background-color: #1e40af; 
+  }

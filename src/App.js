@@ -1,24 +1,53 @@
-import logo from './logo.svg';
-import './App.css';
-
+import React from "react";
+import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
+import LoginPage from "./modules/auth/LoginPage";
+import DashboardPage from "./modules/dashboard/DashboardPage";
+import CustomerListPage from "./modules/customers/CustomerListPage";
+import Layout from "./components/Layout";
+import BusinessListPage from "./modules/businesses/BusinessListPage";
+import InvoiceFormPage from "./modules/invoices/InvoiceFormPage";
+import InvoiceListPage from "./modules/invoices/InvoiceListPage";
+import InvoiceViewPage from "./modules/invoices/InvoiceViewPage";
+import Setting from "./components/Setting";
 function App() {
+  const token = localStorage.getItem("token");
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/login" element={<LoginPage />} />
+
+        <Route
+          path="/"
+          element={token ? <Layout><DashboardPage /></Layout> : <Navigate to="/login" />}
+        />
+        <Route
+          path="/customers"
+          element={token ? <Layout><CustomerListPage /></Layout> : <Navigate to="/login" />}
+        />
+        <Route
+          path="/business"
+          element={token ? <Layout><BusinessListPage /></Layout> : <Navigate to="/login" />}
+        />
+         <Route
+          path="/invoices"
+          element={token ? <Layout><InvoiceFormPage /></Layout> : <Navigate to="/login" />}
+        />
+        <Route
+          path="/invoices-list"
+          element={token ? <Layout><InvoiceListPage /></Layout> : <Navigate to="/login" />}
+        />
+        <Route
+          path="/invoice/:id"
+          element={token ? <Layout><InvoiceViewPage /></Layout> : <Navigate to="/login" />}
+        />
+         <Route
+          path="/settings"
+          element={token ? <Layout><Setting /></Layout> : <Navigate to="/login" />}
+        />
+        
+      </Routes>
+    </Router>
   );
 }
 
