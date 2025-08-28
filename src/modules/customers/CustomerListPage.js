@@ -31,7 +31,7 @@ const CustomerListPage = () => {
 
   const fetchCustomers = async () => {
     try {
-      const res = await axios.get("http://localhost:4000/api/customers/get-customers", {
+      const res = await axios.get("https://invoices-api-8ych.onrender.com/api/customers/get-customers", {
         headers: { Authorization: `Bearer ${token}` },
       });
       setCustomers(res.data.customers);
@@ -46,7 +46,7 @@ const CustomerListPage = () => {
 
   const fetchBusinesses = async () => {
     try {
-      const res = await axios.get("http://localhost:4000/api/business/get-business", {
+      const res = await axios.get("https://invoices-api-8ych.onrender.com/api/business/get-business", {
         headers: { Authorization: `Bearer ${token}` },
       });
       setBusinesses(res.data.businesses);
@@ -64,7 +64,7 @@ const CustomerListPage = () => {
 
   const handleAddCustomer = async () => {
     try {
-      await axios.post("http://localhost:4000/api/customers/add-customer", formCustomer, {
+      await axios.post("https://invoices-api-8ych.onrender.com/api/customers/add-customer", formCustomer, {
         headers: { Authorization: `Bearer ${token}` },
       });
       fetchCustomers();
@@ -92,7 +92,7 @@ const CustomerListPage = () => {
   const handleUpdateCustomer = async () => {
     try {
       await axios.put(
-        `http://localhost:4000/api/customers/update-customer/${selectedCustomer._id}`,
+        `https://invoices-api-8ych.onrender.com/api/customers/update-customer/${selectedCustomer._id}`,
         formCustomer,
         { headers: { Authorization: `Bearer ${token}` } }
       );
@@ -110,7 +110,7 @@ const CustomerListPage = () => {
   const handleDeleteCustomer = async (id) => {
     if (!window.confirm("Are you sure you want to delete this customer?")) return;
     try {
-      await axios.delete(`http://localhost:4000/api/customers/delete-customer/${id}`, {
+      await axios.delete(`https://invoices-api-8ych.onrender.com/api/customers/delete-customer/${id}`, {
         headers: { Authorization: `Bearer ${token}` },
       });
       fetchCustomers();

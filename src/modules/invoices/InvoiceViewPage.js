@@ -8,7 +8,7 @@ import TemplateOne from "../../components/invoiceTemplates/TemplateOne";
 import TemplateTwo from "../../components/invoiceTemplates/TemplateTwo";
 import TemplateThree from "../../components/invoiceTemplates/TemplateThree";
 
-const API_BASE = "http://localhost:4000/api/invoices";
+const API_BASE = "https://invoices-api-8ych.onrender.com/api/invoices";
 
 const InvoiceViewPage = () => {
   const { id } = useParams();

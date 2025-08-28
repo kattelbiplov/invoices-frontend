@@ -3,7 +3,7 @@ import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import "../../componentStyles/invoiceListPage.css";
 
-const API_BASE = "http://localhost:4000";
+const API_BASE = "https://invoices-api-8ych.onrender.com";
 
 const statusColors = {
   draft: "#dfe6e9",

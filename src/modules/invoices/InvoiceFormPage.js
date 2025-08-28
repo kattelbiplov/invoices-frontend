@@ -2,7 +2,7 @@ import React, { useEffect, useMemo, useState } from "react";
 import axios from "axios";
 import "../../componentStyles/invoiceFormPage.css";
 
-const API_BASE = "http://localhost:4000";
+const API_BASE = "https://invoices-api-8ych.onrender.com";
 
 const CreateInvoicePage = () => {
     const token = localStorage.getItem("token");

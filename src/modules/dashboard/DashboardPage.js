@@ -24,11 +24,11 @@ const DashboardPage = () => {
   useEffect(() => {
     const fetchDashboardData = async () => {
       try {
-        const statsRes = await axios.get("http://localhost:4000/api/dashboard/stats", {
+        const statsRes = await axios.get("https://invoices-api-8ych.onrender.com/api/dashboard/stats", {
           headers: { Authorization: `Bearer ${localStorage.getItem("token")}` }
         });
 
-        const invoicesRes = await axios.get("http://localhost:4000/api/dashboard/recent-invoices", {
+        const invoicesRes = await axios.get("https://invoices-api-8ych.onrender.com/api/dashboard/recent-invoices", {
           headers: { Authorization: `Bearer ${localStorage.getItem("token")}` }
         });
 

@@ -14,7 +14,7 @@ const LoginPage = ({ onLogin }) => {
     setError("");
 
     try {
-      const res = await axios.post("http://localhost:4000/api/auth/login", { email, password });
+      const res = await axios.post("https://invoices-api-8ych.onrender.com/api/auth/login", { email, password });
       const { token } = res.data;
       localStorage.setItem("token", token); 
       onLogin?.(); 

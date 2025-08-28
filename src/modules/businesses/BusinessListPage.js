@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import "../../componentStyles/businesses.css"; 
 
-const API_BASE = "http://localhost:4000/api/business"; 
+const API_BASE = "https://invoices-api-8ych.onrender.com/api/business"; 
 
 const BusinessListPage = () => {
   const [businesses, setBusinesses] = useState([]);
